@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Please login
+
+  form(name="login", method="post", action="/users/")
+        div.input
+            br
+            span.label Username
+            input(type="text", name="username", value="username")
+            br
+            span.label Password
+            input(type="text", name="password", value="password")
+        div.actions
+            input(type="submit", value="add")
